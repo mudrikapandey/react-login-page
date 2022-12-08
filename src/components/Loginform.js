@@ -12,9 +12,9 @@ function Loginform({Login,error}) {
     <form onSubmit={submitHandler}>
     <div className='form-inner'>
         <h2>Login</h2>
-        {(error!= "") ? ( <div classNmae="error">{error}</div>) : ""}
+        {(error!== "") ? ( <div classNmae="error">{error}</div>) : ""}
         <div className="form-group">
-            <label htmlFor="name">Name:</label
+            <label htmlFor="name">Name:</label>
             <input type="text" name="name" id="name" onChange={e => setDetails({...details, name:e.target.value})} value={details.name}/>
         </div>
         <div className="form-group">
@@ -23,7 +23,7 @@ function Loginform({Login,error}) {
         </div>
         <div className="form-group">
             <label htmlFor="password">Password</label>
-            <input type="password" name="password" id="password" onchange={e => setDetails({...details,password:e. target.value})}  value={details.password}/>
+            <input type="password" name="password" id="password" onchange={e => setDetails({...details,password:e.target.value})}  value={details.password}/>
         </div>
       
     </div>
@@ -31,4 +31,4 @@ function Loginform({Login,error}) {
   )
 }
 
-export default Loginfrom;
+export default Loginform;
